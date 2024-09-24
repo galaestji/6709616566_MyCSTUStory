@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ffcccb;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    color: #333;
+}
+
+.logo span {
+    color: #ff69b4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    background-color: #ffb6c1;
+    color: #ffffff;
+    padding: 60px 0;
+    border-radius: 15px;
+}
+.hero-image img {
+    max-width: 33.33%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px #ff69b4;
+}
+
+.hero-content h2 span {
+    color: #ffd700;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+.cta-button {
+    background-color: #ff69b4;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff1493;
+}
+
+.video-section {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    border: 2px dashed #ff69b4;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.video-section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.video-section p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+.video-section .video-button {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+.video-player {
+    max-width: 100%;
+    border-radius: 15px;
+    border: 2px solid #ff69b4;
+    margin-top: 20px;
+}
+
+
+.video-section .video-button:hover {
+    background-color: #ff1493;
+}
+
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+}
