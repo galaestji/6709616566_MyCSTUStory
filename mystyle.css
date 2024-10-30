@@ -192,3 +192,15 @@ section {
 img{
     border-radius: 8px ;
 }
+
+@media (max-width: 1024px) {
+    .hero-section, .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+}
+
