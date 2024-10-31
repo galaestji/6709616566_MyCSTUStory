@@ -195,34 +195,109 @@ img{
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;}
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #add8e6;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .main-content {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+
+.secondary-content {
+    background-color: #b0e0e6;
+    padding: 20px;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
 
 @media (max-width: 1024px) {
-    .hero-section, .navbar {
-        flex-direction: column;
-        align-items: center;
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main"
+            "secondary"
+            "footer";
     }
 
-    .hero-content h2 {
-        font-size: 36px;
+    .header {
+        grid-area: header;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        text-align: center;
+    }
+
+    .main-content {
+        grid-area: main;
+    }
+
+    .secondary-content {
+        grid-area: secondary;
+    }
+
+    .footer {
+        grid-area: footer;
     }
 }
 
 @media (max-width: 640px) {
-    .hero-section, .navbar {
-        flex-direction: column;
-        align-items: center;
+    .grid-container {
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "secondary"
+            "footer";
     }
 
-    .hero-content h2 {
-        font-size: 24px;
+    .header {
+        grid-area: header;
     }
 
-    .hero-image img {
-        max-width: 100%;
+    .sidebar {
+        grid-area: sidebar;
+        text-align: center; 
     }
 
-    .container {
-        width: 100%;
+    .main-content {
+        grid-area: main;
+    }
+
+    .secondary-content {
+        grid-area: secondary;
+    }
+
+    .footer {
+        grid-area: footer;
     }
 }
