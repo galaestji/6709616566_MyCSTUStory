@@ -195,12 +195,12 @@ img{
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
     gap: 20px;
     padding: 20px;
   }
   
   .sidebar {
+    grid-column: 1/2;
     display: flex;
     flex-direction: column;
     background-color: #add8e6;
@@ -210,6 +210,7 @@ img{
   }
   
   .main-content {
+    grid-column: 2/3;
     background-color: #fff0f5;
     padding: 20px;
     border-radius: 8px;
@@ -227,8 +228,6 @@ img{
 }
 
 .footer {
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
     background-color: black;
     color: white;
     text-align: center;
